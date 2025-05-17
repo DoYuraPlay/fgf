@@ -76,6 +76,21 @@ while True:
                 print('  ')
                 print('  ')
                 
+                
+            if log == 'Satana' and par == '666':
+                print('Добро пожаловать ',log)
+                break
+            
+            elif log != 'Satana' and par == '666':
+                print('Неверный логин или пароль')
+                sleep(2)
+                print('  ')
+                print('  ')
+            elif log == 'Satana' and par != '666':
+                print('Неверный логин или пароль')
+                sleep(2)
+                print('  ')
+                print('  ')
             
             if log !='He' and log != 'dumal chto' and log != 'DoYuraPlay?' and par != 'Vsevyshniy' and par != 'ON' and par != 'KrutoiChel'  :
                 print('Даный акаунт не создан')
@@ -111,9 +126,14 @@ while True:
                 print('  ')
                 print('  ')
                 break
+            if log == 'Satana':
+                print('Ошибка! Даный логин уже занет')
+                sleep(2)
+                print('  ')
+                print('  ')
+                break
             print('Добро пожаловать ',log)
             break
-            
         
         
         
@@ -125,21 +145,26 @@ while True:
             
             
             
-            
+    progres=0
+    
     if log == 'DoYuraPlay?' and par != 'KrutoiChel' or par == 'KrutoiChel' and vhod == 'р':
-         for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+        for i in range(20):
             print('  ')
         
     if log == 'dumal chto' and par != 'ON' or par == 'ON' and vhod == 'р':
-        for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+        for i in range(20):
             print('  ')
             
     if log == 'He' and par != 'Vsevyshniy' or par == 'Vsevyshniy' and vhod == 'р':
-        for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+        for i in range(20):
             print('  ')
             
     if log == 'Sozdatel' and par != 'Nividin' or par == 'Nividin' and vhod == 'р':
-        for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+        for i in range(20):
+            print('  ')
+    
+    if log == 'Satana' and par != '666' or par == '666' and vhod == 'р':
+        for i in range(20):
             print('  ')
             
     if log == 'DoYuraPlay?' and par == 'KrutoiChel':
@@ -149,7 +174,7 @@ while True:
         sleep(2)
         print('Password: --- -.')
         sleep(0.5)
-        for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+        for i in range(20):
             print('  ')
         sleep(3)
         
@@ -171,7 +196,7 @@ while True:
                 sleep(2)
                 print('Password: 00101110 00101110 00101110 00101101 00100000 00101110 00101110 00101110 00100000 00101110 00100000 00101110 00101110 00101110 00101101 00100000 00101101 00101110 00101101 00101101 00100000 00101110 00101110 00101110 00100000 00101110 00101110 00101110 00101110 00100000 00101101 00101110 00100000 00101110 00101110 00100000 00101101 00101110 00101101 00101101')
                 sleep(3)
-                for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                for i in range(20):
                     print('  ')
                 
             elif gram == 'Нет' or gram == 'нет':
@@ -179,15 +204,15 @@ while True:
                 sleep(2)
                 print('-Ты задумывался ввести ЕГО iмя? На англиском конешно же')
                 sleep(2)
-                for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                for i in range(20):
                     print('  ')
         else:
             print('-...')
             sleep(2)
             print('- 11010000 10100010 11010001 10001011 00100000 11010000 10111101 11010000 10110101 11010000 10110011 11010000 10110100 11010000 10110101 00100000 11010000 10111110 11010001 10000010 00100000 11010000 10111101 11010000 10110101 11010000 10110011 11010000 10111110 00100000 11010000 10111101 11010000 10110101 00100000 11010001 10000001 11010000 10111111 11010001 10000000 11010001 10001111 11010001 10000111 11010000 10110101 11010001 10001000 11010001 10001100 11010001 10000001 11010001 10001111')
             sleep(2)
-            for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
-                    print('  ')
+            for i in range(20):
+                print('  ')
                     
     if log == 'He' and par == 'Vsevyshniy':
         print('Подождите загрузка...')
@@ -211,17 +236,26 @@ while True:
             print('Login: Sozdatel')
             print('Passowrd: *DELETE*')
             sleep(1)
-            for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
-                    print('  ')
+            for i in range(20):
+                print('  ')
         else:
             print('=ЗРЯ...')
             sleep(2)
-            for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
-                    print('  ')
+            for i in range(20):
+                print('  ')
     
     
     if log == 'Sozdatel' and par == 'Nividin':
         rasist=['Враг','Друг','Жизнь','Смерть','Тьма','Разум','Бог','Всевышний','Енот']
+        frind='Это близкий человек, но не по крови'
+        vrag='Это человек который тебя ненавидит'
+        life='Это, то что даётся один раз'
+        dead='Это, то что отнимит вещь которая даётся раз'
+        dark='То где скрывается всё отвзгляду'
+        razum='Это есть у каждого человека'
+        god='Это истиный создатель'
+        vsevysh='Тот кто выше тебя, но ниже меня'
+        enot='Существо похожее на вора '
         print('Подождите загрузка...')
         sleep(3)
         print('=Ты нашёл пароль? Молодец')
@@ -279,27 +313,30 @@ while True:
                     print('Login: Satana')
                     print('Passowrd: 666')
                     sleep(2)
-                    for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                    for i in range(20):
                         print('  ')
                         
                         
                 else:
                     print('=Ха и лох')
                     sleep(2)
-                    for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                    for i in range(20):
                         print('  ')
+                        
+            elif no == 'Нет' or no == 'нет':
+                print('=Хорошо.')
+                sleep(2)
+                print('=Тогда пока')
+                sleep(2)
+                for i in range(20):
+                    print('  ')
+                    
+            else:
+                print('=Сочту это за нет')
+                sleep(2)
+                for i in range(20):
+                    print('  ')
             
-            
-            
-            frind='Это близкий человек, но не по крови'
-            vrag='Это человек который тебя ненавидит'
-            life='Это, то что даётся один раз'
-            dead='Это, то что отнимит вещь которая даётся раз'
-            dark='То где скрывается всё отвзгляду'
-            razum='Это естьу каждого человека'
-            god='Это истиный создатель'
-            vsevysh='Тот кто выше тебя, но ниже меня'
-            enot='Существо похожее на вора '
             
         else:
             print('=Даже "привет" не скажешь?')
@@ -353,21 +390,80 @@ while True:
                     print('Login: Satana')
                     print('Passowrd: 666')
                     sleep(2)
-                    for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                    for i in range(20):
                         print('  ')
                         
                         
                 else:
-                    print('=Ха и лох')
+                    print('=Ха ну и лох')
                     sleep(2)
-                    for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                    for i in range(20):
                         print('  ')
     
     
     
-    
-    if log != 'DoYuraPlay?' and log != 'dumal chto' and log != 'He':
+    if log == 'Satana' and par == '666':
         print('Подождите загрузка...')
+        sleep(3)
+        print('<Приветствую тебя, смертный')
+        sleep(2)
+        print('<Что привело тебя в мою обитель?')
+        sleep(2)
+        print('<Неужто ты собираешься...')
+        sleep(2)
+        print('<...')
+        sleep(2)
+        print('<Встать на моё место?')
+        sleep(2)
+        conesh=input('-')
+        if conesh == 'Да'or conesh == 'да' or conesh == 'ДА':
+            print('<Тогда...')
+            sleep(2)
+            print('<Забирай наздоровье, оно мне и не нужно')
+            sleep(2.5)
+            print('<Я серьёзно')
+            sleep(2)
+            print('<Держи')
+            sleep(2)
+            print('>Давай, пока')
+            sleep(2)
+            print('-Как ты это сделал?')
+            sleep(2)
+            samhz=input('<Неважно как, важно, что теперь это конец')
+            sleep(2)
+            print('Поздравляю с прохождением проекта')
+            sleep(2)
+            break
+            
+        elif conesh == 'Нет'or conesh == 'нет' or conesh == 'НЕТ':
+            print('<Тогда зачем?')
+            sleep(2)
+            print('<Хотя стой я сам угодаю')
+            sleep(2)
+            print('<Ты просто решил проверить, что будет если ввести этот логин и пароль?')
+            sleep(3)
+            print('<Что же, тогда ты проиграл')
+            sleep(2)
+            print('Поздравляю с прохождением проекта')
+            sleep(2)
+            break
+        
+        else:
+            print('<Понятно...')
+            sleep(2)
+            print('<Не чего не понел, так что покааа')
+            sleep(2)
+            print('Поздравляю с прохождением проекта')
+            sleep(2)
+            break
+        
+    
+    
+    
+    
+    if vhod == 'р' and progres >= 0:
+        print('Подождите загрузка...')
+        progres=progres+1
         sleep(3)
         print('-Привет')
         sleep(1)
@@ -379,10 +475,14 @@ while True:
             if yes == 'Да' or yes == 'да':
                 print('-Нет, ты не один...')
                 sleep(2)
-                for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
-                    print('  ')
+                print('Ваш аккаунт удалён')
+                sleep(2)
+                for i in range(20):
+                        print('  ')
             elif yes == 'Нет' or yes == 'нет':
                 print('-Верно. Ведь он, всегда за твоей спиной...')
+                sleep(2)
+                print('Ваш аккаунт удалён')
                 sleep(2)
                 print('Login: DoYuraPlay?')
                 sleep(0.5)
@@ -399,12 +499,16 @@ while True:
                     sleep(2)
                     print('-Знаю звучит по детски')
                     sleep(2)
-                    for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
+                    print('Ваш аккаунт удалён')
+                    sleep(2)
+                    for i in range(20):
                         print('  ')
                     break
                 
                 elif reshi == 'ч':
                     print('-Мне? Ничего, но vот ему...')
+                    sleep(2)
+                    print('Ваш аккаунт удалён')
                     sleep(2)
                     for i in (0,1,2,3,4,5,6,7,8,9,10,11,12):
                         print('  ')
@@ -415,3 +519,34 @@ while True:
                     sleep(2)
                     print('  ')
                     print('  ')
+        else:
+            print('-Понятно')
+            sleep(2)
+            print('Ваш аккаунт удалён')
+            sleep(2)
+            for i in range(20):
+                print('  ')
+
+
+
+
+print('Пускайте титры')
+sleep(2)
+print('Сценарист-Юрий Митрошкин')
+print('  ')
+print('Оператор-Юрец огурец')
+print('  ')
+print('Режесер-Юрашка Чебурашка')
+print('  ')
+print('Закадровый голос-Юра')
+print('  ')
+print('Лётчик космалёта-Юрий Гагарин')
+print('  ')
+print('Помощник сценариста-ДураПлей')
+print('  ')
+print('Натуральный актёр-Юрецкий')
+print('  ')
+print('Идейный вдохновитель-DoYuraPlay?')
+print('  ')
+sleep(2)
+print('ВСЁ. Конец!')
